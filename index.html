@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/jdIconCrop.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="images/jdIconCrop.png" sizes="16x16">
+    <link rel="apple-touch-icon" href="images/jdIconCrop.png">
+    <title>Jiu-Jitsu Submission Dummy</title>
+  </head>
+  <body>
+    <div class="header">
+      <a href="index.html" class="home-button">
+        <img src="images/jdIconCrop.png" alt="Home" class="home-icon">
+      </a>
+      <h1 class="newFont fancy-title">Jiu-Jitsu Dummy</h1>
+    </div>
+
+    <!-- Add search container here, between header and about section -->
+    <div class="search-container">
+        <input type="text" id="searchBar" placeholder="Search for submissions...">
+        <div id="searchResults" class="search-results"></div>
+    </div>
+
+    <h2 class="newFont section-title fancy-subtitle">About Jiu-Jitsu Dummy</h2>
+    <div class="about-container fancy-box">
+        <p class="newFont">
+            <b><a href="https://en.wikipedia.org/wiki/Brazilian_jiu-jitsu" target="_blank">Jiu jitsu</a></b>
+            is a martial art that focuses on close-contact grappling and ground
+            fighting techniques. The goal of jiu jitsu is to get your opponent to
+            submit… whether by choke, joint-break, or sheer… freakin… dominance.
+        </p>
+        <p class="newFont">
+            This <b>dummy's</b> purpose is mostly to teach people that do not practice
+            jiu-jitsu what <b>submissions</b> can be applied to certain body parts.
+            Simply click on a body part, and a list of submissions that you can
+            perform will appear.
+        </p>
+        <p class="newFont">
+            Keep in mind, if we were to compare jiu-jitsu to soccer (a sport EVERYONE knows),
+            submissions would be similar to scoring a goal. Both in jiu-jitsu and soccer,
+            finishing may be what everyone wants to see, but it is a really minor part of the sport.
+            Most of the time in both sports is spent building up to get to the point where you
+            can actually finish.
+        </p>
+        <p class="newFont emphasis">
+            With that said… <b>ENJOY MY FREAKIN WEBSITE</b>
+        </p>
+    </div>
+    <div class="container">
+      <img id="mainDummy" src="images/dummyBody.jpg" usemap="#bodyMap" />
+    </div>
+    <map name="bodyMap">
+      <area
+        shape="rect"
+        coords="137, 85, 158, 282"
+        href="bodyParts/arm.html"
+        id="leftArm"
+      />
+      <area
+        shape="rect"
+        coords="232, 83, 253, 282"
+        href="bodyParts/arm.html"
+        id="rightArm"
+      />
+      <area
+        shape="rectangle"
+        coords="160, 230, 227, 485"
+        href="bodyParts/leg.html"
+        id="legs"
+      />
+      <area 
+        shape="rectangle"
+        coords="176, 8, 216, 68"
+        href="bodyParts/head.html"
+        id="head"
+      />
+    </map>
+    <div class="video-playlist">
+        <a href="playlist.html" class="playlist-link">
+            <h2 class="newFont section-title">Video Tutorial Playlist</h2>
+        </a>
+    </div>
+    <div class="hamburger-menu">
+        <div class="hamburger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="menu-items">
+          <a href="index.html">Home</a>
+            <a href="bodyParts/head.html">Head Submissions</a>
+            <a href="bodyParts/arm.html">Arm Submissions</a>
+            <a href="bodyParts/leg.html">Leg Submissions</a>
+            <a href="playlist.html">Video Playlist</a>
+        </div>
+    </div>
+    <script src="index.js"></script>
+    <script src="search.js"></script>
+    <script src="playlist.js"></script>
+    <script src="menu.js"></script>
+  </body>
+</html>
